@@ -27,18 +27,12 @@ public:
     {
         for(int i=0;i<w; i++)
         {
-            if(y<0 || y>MAP_HEIGHT || y+h>MAP_HEIGHT || x<0 || x>MAP_WIDTH || x+i >MAP_WIDTH )
-                printf("Eccetelo\n");
-
             map[y][x+i]='#';
             map[y+h][x+i]='#';
         }
 
         for(int i=0;i<h; i++)
         {
-            if(y<0 || y>MAP_HEIGHT || y+h>MAP_HEIGHT || x<0 || x>MAP_WIDTH || x+i >MAP_WIDTH )
-                printf("Eccetelo\n");
-
             map[y+i][x]='#';
             map[y+i][x+w]='#';
         }
@@ -66,7 +60,7 @@ typedef struct _snode
     }
 }Tree, *PTree;
 
-PTree splitContainer( Container* container, int iter);
+PTree splitContainer( Container* container, int iter, int val);
 void random_split( Container* container,  Container** split1,  Container** split2 );
 int rand_range(int min, int max);
 

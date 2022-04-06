@@ -11,4 +11,4 @@ include(CPack)
 
 target_include_directories(rougetcod PRIVATE external/libtcod/include)
 
-target_link_libraries(rougetcod C:/Dev/rougetcod/external/libtcod/lib/libtcod.lib)
+target_link_libraries(rougetcod ../external/libtcod/lib/libtcod)

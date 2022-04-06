@@ -375,7 +375,7 @@ int main()
             else if(key.c == 'i')
                 removeIsolatedWalls(6);
             else if(key.c == 'b')
-                generateBsp(MAP_WIDTH,MAP_HEIGHT,4);
+                generateBsp(MAP_WIDTH,MAP_HEIGHT,5);
         }
 
         int x,y;

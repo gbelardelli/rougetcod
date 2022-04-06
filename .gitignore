@@ -121,3 +121,5 @@ Temporary Items
 # Default build directory
 build
 external/*
+build_MSVC
+.vs
